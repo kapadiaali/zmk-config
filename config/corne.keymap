@@ -16,7 +16,7 @@
     };
 
     behaviors {
-        hm: home_row_mod{
+        hm: home_row_mod {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
@@ -24,7 +24,8 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
-	    //hold-trigger-key-positions = < ... >; // List of keys on the right side of the keyboard
+
+            //hold-trigger-key-positions = < ... >; // List of keys on the right side of the keyboard
             //hold-trigger-on-release;
         };
 
@@ -106,9 +107,9 @@
 
         base_layer {
             bindings = <
-&none  &kp Q           &kp W            &kp F               &kp P             &kp B        &kp J        &kp L             &kp U               &kp Y                 &kp SQT         &none
-&none  &hm LEFT_GUI A  &hm LEFT_ALT R   &hm LEFT_CONTROL S  &hm LEFT_SHIFT T  &kp G        &kp M        &hm LEFT_SHIFT N  &hm LEFT_CONTROL E  &hm LEFT_ALT I        &hm LEFT_GUI O  &none
-&none  &kp Z           &hm RIGHT_ALT X  &kp C               &kp D             &kp V        &kp K        &kp H             &kp COMMA           &hm RIGHT_ALT PERIOD  &kp FSLH        &none
+&none  &kp Q           &kp W            &kp E               &kp R             &kp T        &kp Y        &kp U             &kp I               &kp O                 &kp P                   &none
+&none  &hm LEFT_GUI A  &hm LEFT_ALT S   &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G        &kp H        &hm LEFT_SHIFT J  &hm LEFT_CONTROL K  &hm LEFT_ALT L        &hm LEFT_GUI SEMICOLON  &none
+&none  &kp Z           &hm RIGHT_ALT X  &kp C               &kp V             &kp B        &kp N        &kp M             &kp COMMA           &hm RIGHT_ALT PERIOD  &kp FSLH                &none
                                         &lt 4 ESCAPE        &lt 1 SPACE       &lt 3 TAB    &lt 6 ENTER  &lt 5 BACKSPACE   &lt 7 DELETE
             >;
         };
