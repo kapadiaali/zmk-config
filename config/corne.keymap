@@ -125,9 +125,9 @@
 
         button_layer {
             bindings = <
-&none  &kp K_UNDO    &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &none
-&none  &kp LEFT_GUI  &kp LALT   &kp LCTRL   &kp LSHFT    &none         &none       &kp LSHFT    &kp LCTRL   &kp LALT   &kp LGUI    &none
-&none  &kp K_UNDO    &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO  &none
+&none  &kp K_UNDO    &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &kp K_REDO  &kp K_PASTE  &kp K_COPY     &kp K_CUT  &kp K_UNDO         &none
+&none  &kp LEFT_GUI  &kp LALT   &kp LCTRL   &kp LSHFT    &none         &none       &kp LSHFT    &kp RIGHT_GUI  &kp LALT   &kp RIGHT_CONTROL  &none
+&none  &kp K_UNDO    &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &kp K_REDO  &kp K_PASTE  &kp K_COPY     &kp K_CUT  &kp K_UNDO         &none
                                 &mkp MCLK   &mkp LCLK    &mkp RCLK     &mkp RCLK   &mkp LCLK    &mkp MCLK
             >;
         };
