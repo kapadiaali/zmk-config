@@ -99,19 +99,19 @@
 
         base_layer {
             bindings = <
-&none  &kp Q               &kp W            &kp E           &kp R             &kp T        &kp Y        &kp U              &kp I            &kp O                 &kp P                           &none
-&none  &hm LEFT_CONTROL A  &hm LEFT_ALT S   &hm LEFT_GUI D  &hm LEFT_SHIFT F  &kp G        &kp H        &hm RIGHT_SHIFT J  &hm RIGHT_GUI K  &hm RIGHT_ALT L       &hm RIGHT_CONTROL SINGLE_QUOTE  &none
-&none  &kp Z               &kp X            &kp C           &kp V             &kp B        &kp N        &kp M              &kp COMMA        &kp PERIOD            &kp FSLH                        &none
-                                            &lt 3 ESCAPE    &lt 1 SPACE       &lt 2 TAB    &lt 5 ENTER  &lt 4 BACKSPACE    &lt 6 DELETE
+&none  &kp Q               &kp W           &kp E           &kp R             &kp T        &kp Y        &kp U              &kp I            &kp O            &kp P                           &none
+&none  &hm LEFT_CONTROL A  &hm LEFT_ALT S  &hm LEFT_GUI D  &hm LEFT_SHIFT F  &kp G        &kp H        &hm RIGHT_SHIFT J  &hm RIGHT_GUI K  &hm RIGHT_ALT L  &hm RIGHT_CONTROL SINGLE_QUOTE  &none
+&none  &kp Z               &kp X           &kp C           &kp V             &kp B        &kp N        &kp M              &kp COMMA        &kp PERIOD       &kp FSLH                        &none
+                                           &lt 3 ESCAPE    &lt 1 SPACE       &lt 2 TAB    &lt 5 ENTER  &lt 4 BACKSPACE    &lt 6 DELETE
             >;
         };
 
         nav_layer {
             bindings = <
-&none  &none           &none  &none  &none  &none    &kp LG(Z)     &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(LS(Z))  &none
-&none  &none           &none  &none  &none  &none    &caps_word   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT      &none
-&none  &my_bootloader  &none  &to 4  &to 1  &to 0    &kp INS       &kp HOME   &kp PG_DN  &kp PG_UP  &kp END        &none
-                              &none  &none  &none    &kp RET       &kp BSPC   &kp DEL
+&none  &none           &none      &none      &none      &none            &kp LG(Z)   &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(LS(Z))  &none
+&none  &kp LG(Z)       &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(Z))    &caps_word  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT      &none
+&none  &my_bootloader  &none      &to 4      &to 1      &to 0            &kp INS     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END        &none
+                                  &none      &none      &none            &kp RET     &kp BSPC   &kp DEL
             >;
         };
 
@@ -119,8 +119,8 @@
             bindings = <
 &none  &none           &none          &none      &none      &none    &kp LG(LS(Z))  &kp LG(V)       &kp LG(C)       &kp LG(X)     &kp LG(Z)        &none
 &none  &kp LGUI        &kp LALT       &kp LCTRL  &kp LSHFT  &none    &none          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none
-&none  &my_bootloader  &kp RIGHT_ALT  &to 5      &to 2      &to 0    &none       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
-                                      &none      &none      &none    &mkp RCLK   &mkp LCLK       &mkp MCLK
+&none  &my_bootloader  &none          &to 5      &to 2      &to 0    &none          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none
+                                      &none      &none      &none    &mkp RCLK      &mkp LCLK       &mkp MCLK
             >;
         };
 
@@ -128,7 +128,7 @@
             bindings = <
 &none  &none           &none          &none      &none      &none    &none              &none             &none         &none         &none       &none
 &none  &kp LGUI        &kp LALT       &kp LCTRL  &kp LSHFT  &none    &ext_power EP_TOG  &kp C_PREV        &my_vol_br_d  &my_vol_br_i  &kp C_NEXT  &none
-&none  &my_bootloader  &kp RIGHT_ALT  &to 6      &to 3      &to 0    &out OUT_TOG       &my_bt_0          &my_bt_1      &my_bt_2      &my_bt_3    &none
+&none  &my_bootloader  &none          &to 6      &to 3      &to 0    &out OUT_TOG       &my_bt_0          &my_bt_1      &my_bt_2      &my_bt_3    &none
                                       &none      &none      &none    &kp C_STOP         &kp C_PLAY_PAUSE  &kp C_MUTE
             >;
         };
@@ -137,7 +137,7 @@
             bindings = <
 &none  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &none  &none      &none      &none          &none           &none
 &none  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &none  &kp LSHFT  &kp LCTRL  &kp LALT       &kp LGUI        &none
-&none  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &to 0  &to 4      &to 1      &kp RIGHT_ALT  &my_bootloader  &none
+&none  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &to 0  &to 4      &to 1      &none          &my_bootloader  &none
                           &kp DOT  &kp N0  &kp MINUS    &none  &none      &none
             >;
         };
@@ -146,7 +146,7 @@
             bindings = <
 &none  &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &none  &none      &none      &none          &none           &none
 &none  &kp COLON       &kp DOLLAR     &kp PERCENT           &kp CARET              &kp PLUS           &none  &kp LSHFT  &kp LCTRL  &kp LALT       &kp LGUI        &none
-&none  &kp TILDE       &kp EXCL       &kp AT_SIGN           &kp POUND              &kp PIPE           &to 0  &to 5      &to 2      &kp RIGHT_ALT  &my_bootloader  &none
+&none  &kp TILDE       &kp EXCL       &kp AT_SIGN           &kp POUND              &kp PIPE           &to 0  &to 5      &to 2      &none          &my_bootloader  &none
                                       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &none  &none      &none
             >;
         };
@@ -155,7 +155,7 @@
             bindings = <
 &none  &kp F12  &kp F7  &kp F8              &kp F9     &kp PRINTSCREEN    &none  &none      &none      &none          &none           &none
 &none  &kp F11  &kp F4  &kp F5              &kp F6     &kp SCROLLLOCK     &none  &kp LSHFT  &kp LCTRL  &kp LALT       &kp LGUI        &none
-&none  &kp F10  &kp F1  &kp F2              &kp F3     &kp PAUSE_BREAK    &to 0  &to 6      &tog 3     &kp RIGHT_ALT  &my_bootloader  &none
+&none  &kp F10  &kp F1  &kp F2              &kp F3     &kp PAUSE_BREAK    &to 0  &to 6      &tog 3     &none          &my_bootloader  &none
                         &kp K_CONTEXT_MENU  &kp SPACE  &kp TAB            &none  &none      &none
             >;
         };
