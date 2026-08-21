@@ -108,10 +108,10 @@
 
         nav_layer {
             bindings = <
-&none  &none           &none      &none      &none      &none            &kp LG(Z)   &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(LS(Z))  &none
-&none  &kp LG(Z)       &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LS(Z))    &caps_word  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT      &none
-&none  &my_bootloader  &none      &to 4      &to 1      &to 0            &kp INS     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END        &none
-                                  &none      &none      &none            &kp RET     &kp BSPC   &kp DEL
+&none  &none           &none      &none      &kp LG(LC(Q))  &kp LG(LC(LS(N4)))    &kp LG(Z)   &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(LS(Z))  &none
+&none  &kp LG(Z)       &kp LG(X)  &kp LG(C)  &kp LG(V)      &kp LG(LS(Z))         &caps_word  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT      &none
+&none  &my_bootloader  &none      &to 4      &to 1          &to 0                 &kp INS     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END        &none
+                                  &none      &none          &none                 &kp RET     &kp BSPC   &kp DEL
             >;
         };
 
@@ -135,7 +135,7 @@
 
         num_layer {
             bindings = <
-&none  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &none  &none      &none      &none          &none           &none
+&none  &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT     &none  &none      &none      &none  &none           &none
 &none  &kp SEMI   &kp N4  &kp N5   &kp N6  &kp EQUAL    &none  &kp LSHFT  &kp LCTRL  &kp LALT       &kp LGUI        &none
 &none  &kp GRAVE  &kp N1  &kp N2   &kp N3  &kp BSLH     &to 0  &to 4      &to 1      &none          &my_bootloader  &none
                           &kp DOT  &kp N0  &kp MINUS    &none  &none      &none
